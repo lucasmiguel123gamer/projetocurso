@@ -1,13 +1,151 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  width: 100%;
+  height: 150px;
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header .headerTopo {
+  width: 100%;
+  height: 80px;
+}
+
+header .headerMenu {
+  width: 100%;
+  height: 40px;
+
+}
+
+header .headerMenu ul {
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+  gap: 5%;
+}
+
+header .headerMenu li {
+  font-size: 25px;
+
+}
+header .headerMenu li a {
+  color: #333;
+  cursor: pointer;
+}
+header .headerMenu li a:hover {
+  color: red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dcdcdc;
+}
+
+footer .menuFooter {
+  width: 20%;
+  margin-left: 20px;
+}
+
+footer .menuFooter ul {
+  list-style: none;
+
+}
+
+footer .menuFooter li {
+  font-size: 18px;
+  height: 25px;
+}
+footer .menuFooter li a {
+  color: #333;
+  cursor: pointer;
+    border-bottom: 2px dotted #333;
+}
+footer .menuFooter li a:hover {
+  color: red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+}
+
+footer .credenciais {
+  width: 60%;
+  text-align: center;
+}
+
+
+footer .credenciais h1 {
+  color: #333;
+  font-size: 23px;
+}
+
+.disciplinas {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #e2e2e2;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+
+}
+
+.disciplinas.headerDisciplinas {
+  height: 90px;
+
+}
+
+.disciplinas.headerDisciplinas.h1 {
+  width: 100%;
+  margin-left: 40px;
+  font-size: 2em;
+  text-align: left;
+  
+
+}
+
+.disciplinas .contenDisciplinas {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.disciplinas .contenDisciplinas article {
+  display: flex;
+  flex-direction: column;
+  flex: 1;/**/
+  align-items: center;
+}
+
+.disciplinas .contenDisciplinas article img {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #333;
+  margin-bottom: 10px;
+
+}
+
+.disciplinas .contenDisciplinas article h2 {
+font-size: 1.8em;
+margin-bottom: 10px;
+margin-bottom: 20px;
+
 }
